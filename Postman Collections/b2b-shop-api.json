@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "getAllUsers",
+			"name": "alayınıGetir",
 			"id": "6e97f0f2-a595-4012-9c81-1d7d7cb64452",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
