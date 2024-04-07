@@ -92,14 +92,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"test ad\",\r\n    \"username\": \"test username\",\r\n    \"password\": \"testPassword\",\r\n    \"accountNonExpired\": true,\r\n    \"accountNonLocked\": true,\r\n    \"credentialsNonExpired\": true,\r\n    \"authorities\": [\r\n        \"ROLE_USER\"\r\n    ],\r\n    \"enabled\": true\r\n}",
+					"raw": "{\r\n    \"name\": \"Hakan\",\r\n    \"username\": \"hakan\",\r\n    \"password\": \"pass\",\r\n    \"accountNonExpired\": true,\r\n    \"accountNonLocked\": true,\r\n    \"credentialsNonExpired\": true,\r\n    \"authorities\": [\r\n        \"ROLE_USER\"\r\n    ],\r\n    \"enabled\": true\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "localhost:8080/api/user/1"
+				"url": "localhost:8080/api/user/3"
 			},
 			"response": []
 		},
