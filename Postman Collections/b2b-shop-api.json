@@ -51,7 +51,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Esat\",\r\n    \"username\": \"esat\",\r\n    \"password\": \"pass\",\r\n    \"email\": \"esat@email.com\",\r\n    \"authorities\": [\"ROLE_ADMIN\"]\r\n}",
+							"raw": "{\r\n    \"name\": \"Hakan\",\r\n    \"username\": \"hakan\",\r\n    \"password\": \"pass\",\r\n    \"email\": \"hakan@email.com\",\r\n    \"authorities\": [\"ROLE_ADMIN\"]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
