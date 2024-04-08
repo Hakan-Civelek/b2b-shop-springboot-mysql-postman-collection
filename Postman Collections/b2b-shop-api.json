@@ -63,6 +63,31 @@
 					"response": []
 				},
 				{
+					"name": "create MultipleUser",
+					"id": "99049480-9f7c-4480-b828-357bdd12303f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"name\": \"Hakan\",\r\n        \"username\": \"hakan\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"hakan@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_USER\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Esat\",\r\n        \"username\": \"esat\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"esat@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_ADMIN\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Ali\",\r\n        \"username\": \"ali\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"ali@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_ADMIN\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Ayşe\",\r\n        \"username\": \"ayse\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"ayse@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_USER\"\r\n        ]\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/user"
+					},
+					"response": []
+				},
+				{
 					"name": "update UserById",
 					"id": "040a818a-ef19-4cbd-853b-1a1b4b1fa531",
 					"protocolProfileBehavior": {
