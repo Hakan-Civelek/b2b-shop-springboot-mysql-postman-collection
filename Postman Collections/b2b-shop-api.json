@@ -132,6 +132,19 @@
 					"response": []
 				},
 				{
+					"name": "get CompanyById",
+					"id": "7fdad401-26b2-46fc-93dc-34c2f5406d63",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/company/1"
+					},
+					"response": []
+				},
+				{
 					"name": "create Company",
 					"id": "b6ddbe7a-f815-495d-be24-84b5f246a9f6",
 					"protocolProfileBehavior": {
@@ -153,6 +166,53 @@
 							}
 						},
 						"url": "localhost:8080/api/company"
+					},
+					"response": []
+				},
+				{
+					"name": "update CompanyById",
+					"id": "2b15aa07-02fe-4738-8f00-1ca0abed1ba3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"K&C\",\r\n    \"email\": \"kandc@mail.com\",\r\n    \"users\": [\r\n        {\r\n            \"id\": 1,\r\n            \"name\": \"Hakan\",\r\n            \"username\": \"hakan\",\r\n            \"password\": \"$2a$10$BZ6LUyP4sfwRoD/bmrJLG.rq6lM1gs4Yrqi.se9wYictkFIP2z2Da\",\r\n            \"email\": \"hakan@gmail.com\",\r\n            \"accountNonExpired\": true,\r\n            \"accountNonLocked\": true,\r\n            \"credentialsNonExpired\": true,\r\n            \"authorities\": [\r\n                \"ROLE_USER\"\r\n            ],\r\n            \"enabled\": true\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/company/1"
+					},
+					"response": []
+				},
+				{
+					"name": "delete Company",
+					"id": "d10fb13d-f9e4-4ce7-b368-f140d1a8c0df",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/user/1"
 					},
 					"response": []
 				}
