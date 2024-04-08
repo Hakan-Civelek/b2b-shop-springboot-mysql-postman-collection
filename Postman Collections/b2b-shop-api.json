@@ -270,7 +270,7 @@
 			"id": "b7df9e4c-943e-4fe2-b7c6-a013b0333f91"
 		},
 		{
-			"name": "Company Copy",
+			"name": "Shop",
 			"item": [
 				{
 					"name": "get AllShops",
@@ -340,7 +340,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"first cshop\",\r\n    \"email\": \"first@mail.com\",\r\n    \"companies\": [\r\n        {\r\n            \"id\": 1\r\n        }\r\n    ],\r\n    \"users\": [\r\n        {\r\n            \"id\": 1\r\n        }\r\n    ]\r\n}",
+							"raw": "[\r\n    {\r\n        \"name\": \"first cshop\",\r\n        \"email\": \"first@mail.com\",\r\n        \"companies\": [\r\n            {\r\n                \"tenantId\": 1\r\n            }\r\n        ],\r\n        \"users\": [\r\n            {\r\n                \"id\": 1\r\n            }\r\n        ]\r\n    }\r\n]",
 							"options": {
 								"raw": {
 									"language": "json"
