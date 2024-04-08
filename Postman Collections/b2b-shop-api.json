@@ -265,7 +265,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"second company\",\r\n    \"email\": \"second@mail.com\",\r\n    \"companies\": [\r\n        {\"id\": 1}\r\n    ],\r\n    \"users\": [\r\n        {\r\n            \"id\": 1\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"name\": \"second company\",\r\n    \"email\": \"second@mail.com\",\r\n    \"companies\": [\r\n        {\r\n            \"id\": 1\r\n        }\r\n    ],\r\n    \"users\": [\r\n        {\r\n            \"id\": 1\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
