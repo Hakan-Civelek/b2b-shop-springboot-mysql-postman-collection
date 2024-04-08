@@ -6,58 +6,111 @@
 	},
 	"item": [
 		{
-			"name": "getAllUsers",
-			"id": "6e97f0f2-a595-4012-9c81-1d7d7cb64452",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "noauth"
+			"name": "User",
+			"item": [
+				{
+					"name": "getAllUsers",
+					"id": "6e97f0f2-a595-4012-9c81-1d7d7cb64452",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/user"
+					},
+					"response": []
 				},
-				"method": "GET",
-				"header": [],
-				"url": "localhost:8080/api/user"
-			},
-			"response": []
-		},
-		{
-			"name": "getUserById",
-			"id": "5606cb7a-8ddc-4e33-b2b5-4979d515fb48",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "localhost:8080/api/user/1"
-			},
-			"response": []
-		},
-		{
-			"name": "createUser",
-			"id": "1fc99bed-976b-4786-bb53-54c042d494c0",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "noauth"
+				{
+					"name": "getUserById",
+					"id": "5606cb7a-8ddc-4e33-b2b5-4979d515fb48",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/user/1"
+					},
+					"response": []
 				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Hakan\",\r\n    \"username\": \"hakan\",\r\n    \"password\": \"pass\",\r\n    \"authorities\": [\"ROLE_ADMIN\"]\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+				{
+					"name": "createUser",
+					"id": "1fc99bed-976b-4786-bb53-54c042d494c0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Hakan\",\r\n    \"username\": \"hakan\",\r\n    \"password\": \"pass\",\r\n    \"authorities\": [\"ROLE_ADMIN\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/user"
+					},
+					"response": []
 				},
-				"url": "localhost:8080/api/user"
-			},
-			"response": []
+				{
+					"name": "updateUserById",
+					"id": "040a818a-ef19-4cbd-853b-1a1b4b1fa531",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Hakan\",\r\n    \"username\": \"hakan\",\r\n    \"password\": \"pass\",\r\n    \"accountNonExpired\": true,\r\n    \"accountNonLocked\": true,\r\n    \"credentialsNonExpired\": true,\r\n    \"authorities\": [\r\n        \"ROLE_USER\"\r\n    ],\r\n    \"enabled\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/user/3"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser",
+					"id": "d6f3e900-6cd8-4578-bf82-9b214b899ce5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/user/1"
+					},
+					"response": []
+				}
+			],
+			"id": "fa6096f6-75e0-4540-89a6-aea010a0ddd7"
 		},
 		{
 			"name": "generateToken",
@@ -82,30 +135,8 @@
 			"response": []
 		},
 		{
-			"name": "updateUserById",
-			"id": "040a818a-ef19-4cbd-853b-1a1b4b1fa531",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Hakan\",\r\n    \"username\": \"hakan\",\r\n    \"password\": \"pass\",\r\n    \"accountNonExpired\": true,\r\n    \"accountNonLocked\": true,\r\n    \"credentialsNonExpired\": true,\r\n    \"authorities\": [\r\n        \"ROLE_USER\"\r\n    ],\r\n    \"enabled\": true\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "localhost:8080/api/user/3"
-			},
-			"response": []
-		},
-		{
-			"name": "deleteUser",
-			"id": "d6f3e900-6cd8-4578-bf82-9b214b899ce5",
+			"name": "createCompany",
+			"id": "b6ddbe7a-f815-495d-be24-84b5f246a9f6",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -113,18 +144,18 @@
 				"auth": {
 					"type": "noauth"
 				},
-				"method": "DELETE",
+				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\r\n    \"name\": \"Hakan\",\r\n    \"username\": \"hakan\",\r\n    \"password\": \"pass\",\r\n    \"authorities\": [\"ROLE_ADMIN\"]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "localhost:8080/api/user/1"
+				"url": "localhost:8080/api/user"
 			},
 			"response": []
 		}
