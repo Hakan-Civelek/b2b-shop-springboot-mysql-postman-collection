@@ -212,7 +212,7 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/user/1"
+						"url": "localhost:8080/api/company/1"
 					},
 					"response": []
 				}
