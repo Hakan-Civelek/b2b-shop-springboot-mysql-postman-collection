@@ -158,7 +158,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"second company\",\r\n    \"email\": \"second@mail.com\",\r\n    \"users\": [\r\n        {\r\n            \"id\": 1,\r\n            \"name\": \"Hakan\",\r\n            \"username\": \"hakan\",\r\n            \"password\": \"pass\",\r\n            \"email\": \"hakan@gmail.com\",\r\n            \"accountNonExpired\": true,\r\n            \"accountNonLocked\": true,\r\n            \"credentialsNonExpired\": true,\r\n            \"authorities\": [\r\n                \"ROLE_USER\"\r\n            ],\r\n            \"enabled\": true\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"name\": \"first company\",\r\n    \"email\": \"first@mail.com\",\r\n    \"users\": [\r\n        {\r\n            \"id\": 1            \r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
