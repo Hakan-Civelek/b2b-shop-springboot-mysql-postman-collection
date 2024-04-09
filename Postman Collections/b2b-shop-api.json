@@ -405,7 +405,7 @@
 			"name": "Product",
 			"item": [
 				{
-					"name": "get All Products",
+					"name": "get AllProducts",
 					"id": "0dabf93d-7294-4086-a347-ea2b75b4a501",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -416,12 +416,12 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "localhost:8080/api/user"
+						"url": "localhost:8080/api/product"
 					},
 					"response": []
 				},
 				{
-					"name": "get UserById",
+					"name": "get ProductById",
 					"id": "e527c524-e095-4959-a3a9-6a69036ce043",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -429,12 +429,12 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "localhost:8080/api/user/1"
+						"url": "localhost:8080/api/product/1"
 					},
 					"response": []
 				},
 				{
-					"name": "create User",
+					"name": "create Product",
 					"id": "e313685e-9e2a-4ed8-9aae-007183e9e497",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
