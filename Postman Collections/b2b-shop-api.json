@@ -447,7 +447,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"name\",\r\n    \"description\": \"description\",\r\n    \"salesPrice\": 54,\r\n    \"grossPrice\": 47,\r\n    \"sku\": \"sku\",\r\n    \"asin\": \"asin\",\r\n    \"stock\":8\r\n}",
+							"raw": "{\r\n    \"name\": \"name\",\r\n    \"description\": \"description\",\r\n    \"salesPrice\": 54.0,\r\n    \"grossPrice\": 47.0,\r\n    \"sku\": \"sku\",\r\n    \"asin\": \"asin\",\r\n    \"stock\": 8\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -472,7 +472,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "[\r\n    {\r\n        \"name\": \"name\",\r\n        \"description\": \"description\",\r\n        \"salesPrice\": 54.0,\r\n        \"grossPrice\": 47.0,\r\n        \"sku\": \"sku\",\r\n        \"asin\": \"asin\",\r\n        \"stock\": 8\r\n    }\r\n]",
+							"raw": "[\r\n    {\r\n        \"name\": \"name of product1\",\r\n        \"description\": \"description of product1\",\r\n        \"salesPrice\": 54.0,\r\n        \"grossPrice\": 47.0,\r\n        \"sku\": \"sku of product1\",\r\n        \"asin\": \"asin of product1\",\r\n        \"stock\": 8\r\n    }\r\n]",
 							"options": {
 								"raw": {
 									"language": "json"
