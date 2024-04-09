@@ -459,7 +459,7 @@
 					"response": []
 				},
 				{
-					"name": "create multipleUsers",
+					"name": "create multipleProducts",
 					"id": "b8fb1b48-9c86-455e-b1e8-d14b4f137332",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -472,14 +472,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "[\r\n    {\r\n        \"name\": \"Hakan\",\r\n        \"username\": \"hakan\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"hakan@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_USER\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Esat\",\r\n        \"username\": \"esat\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"esat@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_ADMIN\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Ali\",\r\n        \"username\": \"ali\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"ali@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_ADMIN\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Ayşe\",\r\n        \"username\": \"ayse\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"ayse@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_USER\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Fatma\",\r\n        \"username\": \"fatma\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"fatma@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_ADMIN\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Hatice\",\r\n        \"username\": \"hatice\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"hatice@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_USER\"\r\n        ]\r\n    }\r\n]",
+							"raw": "[\r\n    {\r\n        \"name\": \"name\",\r\n        \"description\": \"description\",\r\n        \"salesPrice\": 54.0,\r\n        \"grossPrice\": 47.0,\r\n        \"sku\": \"sku\",\r\n        \"asin\": \"asin\",\r\n        \"stock\": 8\r\n    }\r\n]",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "localhost:8080/api/user"
+						"url": "localhost:8080/api/product"
 					},
 					"response": []
 				},
