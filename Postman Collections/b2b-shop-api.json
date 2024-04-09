@@ -447,7 +447,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Hakan\",\r\n    \"username\": \"hakan\",\r\n    \"password\": \"pass\",\r\n    \"email\": \"hakan@email.com\",\r\n    \"authorities\": [\"ROLE_ADMIN\"]\r\n}",
+							"raw": "{\r\n    \"name\": \"name\",\r\n    \"description\": \"description\",\r\n    \"salesPrice\": 54,\r\n    \"grossPrice\": 47,\r\n    \"sku\": \"sku\",\r\n    \"asin\": \"asin\",\r\n    \"stock\":8\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
