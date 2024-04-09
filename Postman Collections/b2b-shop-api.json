@@ -454,7 +454,7 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/user"
+						"url": "localhost:8080/api/product"
 					},
 					"response": []
 				},
