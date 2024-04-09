@@ -484,7 +484,7 @@
 					"response": []
 				},
 				{
-					"name": "update UserById",
+					"name": "update ProductById",
 					"id": "651be881-48bd-4f47-9b7c-f9bc2860fced",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -501,12 +501,12 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/user/1"
+						"url": "localhost:8080/api/product/1"
 					},
 					"response": []
 				},
 				{
-					"name": "delete User",
+					"name": "delete Product",
 					"id": "4183db00-ad59-4a3e-a035-9ea50a55d41a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -526,7 +526,7 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/user/1"
+						"url": "localhost:8080/api/product/1"
 					},
 					"response": []
 				}
