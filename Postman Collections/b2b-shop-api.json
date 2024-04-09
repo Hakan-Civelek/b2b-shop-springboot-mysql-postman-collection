@@ -369,7 +369,7 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/shop/2"
+						"url": "localhost:8080/api/shop/1"
 					},
 					"response": []
 				},
