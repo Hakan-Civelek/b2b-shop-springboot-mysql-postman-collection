@@ -402,6 +402,138 @@
 			"id": "e2aa7cbe-3d54-4103-bc7b-c1b386184a91"
 		},
 		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "get All Products",
+					"id": "0dabf93d-7294-4086-a347-ea2b75b4a501",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/user"
+					},
+					"response": []
+				},
+				{
+					"name": "get UserById",
+					"id": "e527c524-e095-4959-a3a9-6a69036ce043",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/user/1"
+					},
+					"response": []
+				},
+				{
+					"name": "create User",
+					"id": "e313685e-9e2a-4ed8-9aae-007183e9e497",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Hakan\",\r\n    \"username\": \"hakan\",\r\n    \"password\": \"pass\",\r\n    \"email\": \"hakan@email.com\",\r\n    \"authorities\": [\"ROLE_ADMIN\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/user"
+					},
+					"response": []
+				},
+				{
+					"name": "create multipleUsers",
+					"id": "b8fb1b48-9c86-455e-b1e8-d14b4f137332",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"name\": \"Hakan\",\r\n        \"username\": \"hakan\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"hakan@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_USER\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Esat\",\r\n        \"username\": \"esat\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"esat@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_ADMIN\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Ali\",\r\n        \"username\": \"ali\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"ali@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_ADMIN\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Ayşe\",\r\n        \"username\": \"ayse\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"ayse@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_USER\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Fatma\",\r\n        \"username\": \"fatma\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"fatma@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_ADMIN\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Hatice\",\r\n        \"username\": \"hatice\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"hatice@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_USER\"\r\n        ]\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/user"
+					},
+					"response": []
+				},
+				{
+					"name": "update UserById",
+					"id": "651be881-48bd-4f47-9b7c-f9bc2860fced",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Esat\",\r\n    \"username\": \"esat\",\r\n    \"password\": \"pass\",\r\n    \"email\": \"test@email.com\",\r\n    \"accountNonExpired\": true,\r\n    \"accountNonLocked\": true,\r\n    \"credentialsNonExpired\": true,\r\n    \"authorities\": [\r\n        \"ROLE_ADMIN\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/user/1"
+					},
+					"response": []
+				},
+				{
+					"name": "delete User",
+					"id": "4183db00-ad59-4a3e-a035-9ea50a55d41a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/user/1"
+					},
+					"response": []
+				}
+			],
+			"id": "08c284f3-c473-49be-aea4-ebf08596c682"
+		},
+		{
 			"name": "Auth",
 			"item": [
 				{
