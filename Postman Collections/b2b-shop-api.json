@@ -38,7 +38,7 @@
 					"response": []
 				},
 				{
-					"name": "create User",
+					"name": "create singleUser",
 					"id": "1fc99bed-976b-4786-bb53-54c042d494c0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -170,7 +170,7 @@
 					"response": []
 				},
 				{
-					"name": "create Company",
+					"name": "create singleCompany",
 					"id": "b6ddbe7a-f815-495d-be24-84b5f246a9f6",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -302,7 +302,7 @@
 					"response": []
 				},
 				{
-					"name": "create Shop",
+					"name": "create singleShop",
 					"id": "f91afafa-e02f-47cf-95ab-561e9d50f36d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -434,7 +434,7 @@
 					"response": []
 				},
 				{
-					"name": "create Product",
+					"name": "create singleProduct",
 					"id": "e313685e-9e2a-4ed8-9aae-007183e9e497",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
