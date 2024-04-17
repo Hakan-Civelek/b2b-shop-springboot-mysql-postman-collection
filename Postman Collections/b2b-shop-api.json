@@ -138,10 +138,10 @@
 			"id": "fa6096f6-75e0-4540-89a6-aea010a0ddd7"
 		},
 		{
-			"name": "Company",
+			"name": "Customer",
 			"item": [
 				{
-					"name": "get AllCompanies",
+					"name": "get AllCustomers",
 					"id": "7f642da9-a213-499b-8c7c-c217f4fd40b4",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -152,12 +152,12 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "localhost:8080/api/company"
+						"url": "localhost:8080/api/customer"
 					},
 					"response": []
 				},
 				{
-					"name": "get CompanyById",
+					"name": "get CustomerById",
 					"id": "7fdad401-26b2-46fc-93dc-34c2f5406d63",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -165,12 +165,12 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "localhost:8080/api/company/1"
+						"url": "localhost:8080/api/customer/1"
 					},
 					"response": []
 				},
 				{
-					"name": "create singleCompany",
+					"name": "create singleCustomer",
 					"id": "b6ddbe7a-f815-495d-be24-84b5f246a9f6",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -190,12 +190,12 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/company"
+						"url": "localhost:8080/api/customer"
 					},
 					"response": []
 				},
 				{
-					"name": "create multipleCompanies",
+					"name": "create multipleCustomers",
 					"id": "b6be5b28-43d0-415c-85dc-4c11f96d5b4f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -215,12 +215,12 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/company"
+						"url": "localhost:8080/api/customer"
 					},
 					"response": []
 				},
 				{
-					"name": "update CompanyById",
+					"name": "update CustomerById",
 					"id": "2b15aa07-02fe-4738-8f00-1ca0abed1ba3",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -237,12 +237,12 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/company/1"
+						"url": "localhost:8080/api/customer/1"
 					},
 					"response": []
 				},
 				{
-					"name": "delete Company",
+					"name": "delete Customer",
 					"id": "d10fb13d-f9e4-4ce7-b368-f140d1a8c0df",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -262,7 +262,7 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/company/1"
+						"url": "localhost:8080/api/customer/1"
 					},
 					"response": []
 				}
