@@ -33,7 +33,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "localhost:8080/api/shop/2"
+						"url": "{{baseurl}}/shop/2"
 					},
 					"response": []
 				},
