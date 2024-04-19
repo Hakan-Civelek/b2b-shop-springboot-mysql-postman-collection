@@ -566,6 +566,14 @@
 		{
 			"key": "baseurl",
 			"value": "localhost:8080/api"
+		},
+		{
+			"key": "baseurl",
+			"value": ""
+		},
+		{
+			"key": "bearer_token",
+			"value": ""
 		}
 	]
 }
