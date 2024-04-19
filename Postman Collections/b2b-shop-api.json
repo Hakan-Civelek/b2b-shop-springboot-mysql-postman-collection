@@ -543,8 +543,61 @@
 					"response": []
 				},
 				{
+					"name": "register multipleUsers",
+					"id": "ea3acf31-5c70-437b-b650-6705c2fe35d4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"name\": \"Hakan\",\r\n        \"username\": \"hakan\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"hakan@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_SHOP_OWNER\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Esat\",\r\n        \"username\": \"esat\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"esat@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_SHOP_OWNER\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Ali\",\r\n        \"username\": \"ali\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"ali@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_SHOP_OWNER\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Ayşe\",\r\n        \"username\": \"ayse\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"ayse@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_SHOP_OWNER\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Fatma\",\r\n        \"username\": \"fatma\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"fatma@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Hatice\",\r\n        \"username\": \"hatice\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"hatice@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Ahmet\",\r\n        \"username\": \"ahmet\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"ahmet@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Merve\",\r\n        \"username\": \"merve\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"merve@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Sıdıka\",\r\n        \"username\": \"sıdıka\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"sıdıka@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Basak\",\r\n        \"username\": \"basak\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"basak@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ]\r\n    },\r\n    {\r\n        \"name\": \"Pelin\",\r\n        \"username\": \"pelin\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"pelin@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ]\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/user"
+					},
+					"response": []
+				},
+				{
 					"name": "create multipleUsers",
 					"id": "99049480-9f7c-4480-b828-357bdd12303f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"name\": \"Hakan\",\r\n        \"username\": \"hakan\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"hakan@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_SHOP_OWNER\"\r\n        ],\r\n        \"shop\": {\r\n            \"tenantId\": 1\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Esat\",\r\n        \"username\": \"esat\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"esat@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_SHOP_OWNER\"\r\n        ],\r\n        \"shop\": {\r\n            \"tenantId\": 2\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Ali\",\r\n        \"username\": \"ali\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"ali@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_SHOP_OWNER\"\r\n        ],\r\n        \"shop\": {\r\n            \"tenantId\": 3\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Ayşe\",\r\n        \"username\": \"ayse\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"ayse@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_SHOP_OWNER\"\r\n        ],\r\n        \"shop\": {\r\n            \"tenantId\": 4\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Fatma\",\r\n        \"username\": \"fatma\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"fatma@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 1\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Hatice\",\r\n        \"username\": \"hatice\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"hatice@email.com\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 2\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Ahmet\",\r\n        \"username\": \"ahmet\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"ahmet@email.com\",\r\n        \"accountNonExpired\": true,\r\n        \"accountNonLocked\": true,\r\n        \"credentialsNonExpired\": true,\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 3\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Merve\",\r\n        \"username\": \"merve\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"merve@email.com\",\r\n        \"accountNonExpired\": true,\r\n        \"accountNonLocked\": true,\r\n        \"credentialsNonExpired\": true,\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 4\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Sıdıka\",\r\n        \"username\": \"sıdıka\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"sıdıka@email.com\",\r\n        \"accountNonExpired\": true,\r\n        \"accountNonLocked\": true,\r\n        \"credentialsNonExpired\": true,\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 1\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Basak\",\r\n        \"username\": \"basak\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"basak@email.com\",\r\n        \"accountNonExpired\": true,\r\n        \"accountNonLocked\": true,\r\n        \"credentialsNonExpired\": true,\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 2\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Pelin\",\r\n        \"username\": \"pelin\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"pelin@email.com\",\r\n        \"accountNonExpired\": true,\r\n        \"accountNonLocked\": true,\r\n        \"credentialsNonExpired\": true,\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 3\r\n        }\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/user"
+					},
+					"response": []
+				},
+				{
+					"name": "update multipleUsers",
+					"id": "daa4688c-54c6-4fa0-af67-fb68aecf5858",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
