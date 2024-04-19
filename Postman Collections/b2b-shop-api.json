@@ -538,6 +538,23 @@
 			"item": [
 				{
 					"name": "generateToken",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "51e4b299-ca97-4496-949f-659a4c25283e",
+								"exec": [
+									"pm.test(\"Set Token!\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    console.log(jsonData.token)",
+									"    pm.collectionVariables.set(\"bearer_token\", jsonData.token);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "bc67d44e-1843-41e1-9a00-02f923d20ebf",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -547,7 +564,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"esat\",\r\n    \"password\": \"pass\"\r\n}",
+							"raw": "{\r\n    \"username\": \"hakan\",\r\n    \"password\": \"pass\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -562,14 +579,34 @@
 			"id": "db75c280-f613-4ca7-8b67-8b17787232dd"
 		}
 	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "e29f5968-530b-4ebe-bd5d-6cc0ad5e5878",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "6640c268-33c0-4b10-878b-dd5f2fdd5011",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
 	"variable": [
 		{
 			"key": "baseurl",
 			"value": "localhost:8080/api"
-		},
-		{
-			"key": "baseurl",
-			"value": ""
 		},
 		{
 			"key": "bearer_token",
