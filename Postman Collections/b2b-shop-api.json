@@ -383,13 +383,16 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"name of product1\",\r\n    \"description\": \"description of product1\",\r\n    \"salesPrice\": 54.0,\r\n    \"grossPrice\": 47.0,\r\n    \"sku\": \"sku of product1\",\r\n    \"asin\": \"asin of product1\",\r\n    \"gtin\": \"1845678901001\",\r\n    \"stock\": 8\r\n}",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"name of product1\",\r\n    \"description\": \"description of product1\",\r\n    \"salesPrice\": 54.0,\r\n    \"grossPrice\": 47.0,\r\n    \"code\": \"123asdwq\",\r\n    \"shop\": {\r\n        \"tenantId\": 1,\r\n        \"name\": \"first shop\",\r\n        \"email\": \"firstcustomer@mail.com\"\r\n    },\r\n    \"gtin\": \"5445678901061\",\r\n    \"stock\": 8\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
