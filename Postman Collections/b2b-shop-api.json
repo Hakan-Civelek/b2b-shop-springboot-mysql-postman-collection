@@ -110,13 +110,16 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"tenantId\": 2,\r\n    \"company\": [],\r\n    \"name\": \"first company\",\r\n    \"email\": \"second@mail.com\",\r\n    \"customers\": [\r\n        {\r\n            \"tenantId\": 1\r\n        }\r\n    ],\r\n    \"users\": [\r\n        {\r\n            \"id\": 1\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"name\": \"first shop\",\r\n    \"email\": \"firstshop@mail.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -188,7 +191,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "GET",
 						"header": [],
@@ -494,7 +500,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "GET",
 						"header": [],
