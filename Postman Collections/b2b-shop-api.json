@@ -16,11 +16,14 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "GET",
 						"header": [],
-						"url": "localhost:8080/api/shop"
+						"url": "{{baseurl}}/shop"
 					},
 					"response": []
 				},
@@ -31,9 +34,15 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
 						"method": "GET",
 						"header": [],
-						"url": "{{baseurl}}/shop/2"
+						"url": "{{baseurl}}/shop/1"
 					},
 					"response": []
 				},
@@ -45,7 +54,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "POST",
 						"header": [],
@@ -70,7 +82,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "POST",
 						"header": [],
@@ -94,6 +109,12 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
 						"method": "PUT",
 						"header": [],
 						"body": {
@@ -117,7 +138,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "DELETE",
 						"header": [],
@@ -148,7 +172,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "GET",
 						"header": [],
@@ -412,7 +439,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "GET",
 						"header": [],
