@@ -16,7 +16,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "GET",
 						"header": [],
@@ -32,7 +35,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "GET",
 						"header": [],
@@ -48,7 +54,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "POST",
 						"header": [],
@@ -73,7 +82,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "POST",
 						"header": [],
@@ -98,7 +110,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "PUT",
 						"header": [],
@@ -123,7 +138,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "DELETE",
 						"header": [],
@@ -173,7 +191,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "GET",
 						"header": [],
@@ -189,7 +210,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "POST",
 						"header": [],
@@ -214,7 +238,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "POST",
 						"header": [],
