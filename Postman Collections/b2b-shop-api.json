@@ -692,7 +692,7 @@
 						}
 					}
 				},
-				"url": "localhost:8080/api/user/createOwners"
+				"url": "localhost:8080/api/user/createSystemOwners"
 			},
 			"response": []
 		}
