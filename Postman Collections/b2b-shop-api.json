@@ -630,7 +630,7 @@
 			"name": "Auth",
 			"item": [
 				{
-					"name": "generateToken",
+					"name": "api/login",
 					"event": [
 						{
 							"listen": "test",
