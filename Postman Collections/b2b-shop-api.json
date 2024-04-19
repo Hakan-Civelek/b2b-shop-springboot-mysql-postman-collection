@@ -561,5 +561,11 @@
 			],
 			"id": "db75c280-f613-4ca7-8b67-8b17787232dd"
 		}
+	],
+	"variable": [
+		{
+			"key": "baseurl",
+			"value": "localhost:8080/api"
+		}
 	]
 }
