@@ -190,6 +190,12 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
 						"method": "GET",
 						"header": [],
 						"url": "localhost:8080/api/customer/1"
@@ -204,7 +210,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "POST",
 						"header": [],
@@ -229,7 +238,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "POST",
 						"header": [],
@@ -253,6 +265,12 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
 						"method": "PUT",
 						"header": [],
 						"body": {
@@ -276,7 +294,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "DELETE",
 						"header": [],
@@ -307,7 +328,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "GET",
 						"header": [],
@@ -322,6 +346,12 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
 						"method": "GET",
 						"header": [],
 						"url": "localhost:8080/api/product/1"
@@ -336,7 +366,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "POST",
 						"header": [],
@@ -361,7 +394,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "POST",
 						"header": [],
@@ -385,6 +421,12 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
 						"method": "PUT",
 						"header": [],
 						"body": {
@@ -408,7 +450,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "DELETE",
 						"header": [],
@@ -457,6 +502,12 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
 						"method": "GET",
 						"header": [],
 						"url": "localhost:8080/api/user/1"
@@ -471,7 +522,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "POST",
 						"header": [],
@@ -496,7 +550,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "POST",
 						"header": [],
@@ -520,6 +577,12 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
 						"method": "PUT",
 						"header": [],
 						"body": {
@@ -543,7 +606,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "DELETE",
 						"header": [],
