@@ -70,7 +70,7 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/shop"
+						"url": "{{baseurl}}/shop"
 					},
 					"response": []
 				},
@@ -98,7 +98,7 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/shop"
+						"url": "{{baseurl}}/shop"
 					},
 					"response": []
 				},
@@ -126,7 +126,7 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/shop/1"
+						"url": "{{baseurl}}/shop/1"
 					},
 					"response": []
 				},
@@ -154,7 +154,7 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/shop/1"
+						"url": "{{baseurl}}/shop/1"
 					},
 					"response": []
 				}
@@ -179,7 +179,7 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "localhost:8080/api/customer"
+						"url": "{{baseurl}}/customer"
 					},
 					"response": []
 				},
@@ -198,7 +198,7 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "localhost:8080/api/customer/1"
+						"url": "{{baseurl}}/customer/1"
 					},
 					"response": []
 				},
@@ -226,7 +226,7 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/customer"
+						"url": "{{baseurl}}/customer"
 					},
 					"response": []
 				},
@@ -254,7 +254,7 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/customer"
+						"url": "{{baseurl}}/customer"
 					},
 					"response": []
 				},
@@ -282,7 +282,7 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/customer/1"
+						"url": "{{baseurl}}/customer/1"
 					},
 					"response": []
 				},
@@ -310,7 +310,7 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/customer/1"
+						"url": "{{baseurl}}/customer/1"
 					},
 					"response": []
 				}
@@ -335,7 +335,7 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "localhost:8080/api/product"
+						"url": "{{baseurl}}/product"
 					},
 					"response": []
 				},
@@ -351,7 +351,7 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "localhost:8080/api/product/1"
+						"url": "{{baseurl}}/product/1"
 					},
 					"response": []
 				},
@@ -379,7 +379,7 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/product"
+						"url": "{{baseurl}}/product"
 					},
 					"response": []
 				},
@@ -407,7 +407,7 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/product"
+						"url": "{{baseurl}}/product"
 					},
 					"response": []
 				},
@@ -435,7 +435,7 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/product/1"
+						"url": "{{baseurl}}/product/1"
 					},
 					"response": []
 				},
@@ -463,7 +463,7 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/product/1"
+						"url": "{{baseurl}}/product/1"
 					},
 					"response": []
 				}
@@ -488,7 +488,7 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "localhost:8080/api/user"
+						"url": "{{baseurl}}/user"
 					},
 					"response": []
 				},
@@ -507,7 +507,7 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "localhost:8080/api/user/1"
+						"url": "{{baseurl}}/user/1"
 					},
 					"response": []
 				},
@@ -535,7 +535,7 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/user"
+						"url": "{{baseurl}}/user"
 					},
 					"response": []
 				},
@@ -563,7 +563,7 @@
 								}
 							}
 						},
-						"url": "localhost:8080/api/user"
+						"url": "{{baseurl}}/user"
 					},
 					"response": []
 				},
