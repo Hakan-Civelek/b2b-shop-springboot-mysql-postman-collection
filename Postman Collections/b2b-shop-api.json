@@ -335,6 +335,15 @@
 						},
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": "{{baseurl}}/product"
 					},
 					"response": []
@@ -630,7 +639,7 @@
 			"name": "Auth",
 			"item": [
 				{
-					"name": "generateToken",
+					"name": "api/login",
 					"event": [
 						{
 							"listen": "test",
