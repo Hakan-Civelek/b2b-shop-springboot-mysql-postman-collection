@@ -28,6 +28,25 @@
 					"response": []
 				},
 				{
+					"name": "get Shop",
+					"id": "4dd7d4a5-d0e3-4496-bc98-00f045abd948",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseurl}}/shop"
+					},
+					"response": []
+				},
+				{
 					"name": "get ShopById",
 					"id": "c3507022-0d96-4cb7-99e8-37c9d21b9ab5",
 					"protocolProfileBehavior": {
