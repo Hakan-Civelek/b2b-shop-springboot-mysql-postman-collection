@@ -375,7 +375,10 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
 						},
 						"method": "GET",
 						"header": [],
