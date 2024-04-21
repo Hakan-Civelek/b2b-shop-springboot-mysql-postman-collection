@@ -658,6 +658,171 @@
 			"id": "fa6096f6-75e0-4540-89a6-aea010a0ddd7"
 		},
 		{
+			"name": "Address",
+			"item": [
+				{
+					"name": "get AllProducts",
+					"id": "7ac597bb-05f4-4041-9dc9-a9f0b2f5ea49",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/product"
+					},
+					"response": []
+				},
+				{
+					"name": "get ProductById",
+					"id": "a21e54a3-5ee7-457d-843b-91ae14bd2005",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseurl}}/product/1"
+					},
+					"response": []
+				},
+				{
+					"name": "create singleProduct",
+					"id": "9f50da97-1011-437e-9465-7e1365819480",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"name of product1\",\r\n    \"description\": \"description of product1\",\r\n    \"salesPrice\": 54.0,\r\n    \"grossPrice\": 47.0,\r\n    \"gtin\": \"12323123123123\",\r\n    \"stock\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/product"
+					},
+					"response": []
+				},
+				{
+					"name": "create multipleProducts",
+					"id": "5464a10b-2b31-4788-ae50-faed2921abfb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"name\": \"name of product1\",\r\n        \"description\": \"description of product1\",\r\n        \"salesPrice\": 54.0,\r\n        \"grossPrice\": 47.0,\r\n        \"code\": \"123asdwq\",\r\n        \"shop\": {\r\n            \"tenantId\": 1\r\n        },\r\n        \"gtin\": \"5445678901061\",\r\n        \"stock\": 8\r\n    },\r\n    {\r\n        \"name\": \"name of product2\",\r\n        \"description\": \"description of product2\",\r\n        \"salesPrice\": 123.0,\r\n        \"grossPrice\": 37.0,\r\n        \"code\": \"5123wq\",\r\n        \"shop\": {\r\n            \"tenantId\": 2\r\n        },\r\n        \"gtin\": \"1845123901001\",\r\n        \"stock\": 76\r\n    },\r\n    {\r\n        \"name\": \"name of product3\",\r\n        \"description\": \"description of product3\",\r\n        \"salesPrice\": 56.0,\r\n        \"grossPrice\": 49.0,\r\n        \"code\": \"asd123asd\",\r\n        \"shop\": {\r\n            \"tenantId\": 3\r\n        },\r\n        \"gtin\": \"5325678901001\",\r\n        \"stock\": 89\r\n    },\r\n    {\r\n        \"name\": \"name of product4\",\r\n        \"description\": \"description of product4\",\r\n        \"salesPrice\": 123.56,\r\n        \"grossPrice\": 97.79,\r\n        \"code\": \"gcdff213asd\",\r\n        \"shop\": {\r\n            \"tenantId\": 1\r\n        },\r\n        \"gtin\": \"1845523401001\",\r\n        \"stock\": 74\r\n    },\r\n    {\r\n        \"name\": \"name of product5\",\r\n        \"description\": \"description of product5\",\r\n        \"salesPrice\": 17.46,\r\n        \"grossPrice\": 7.97,\r\n        \"code\": \"ghjfgwr\",\r\n        \"shop\": {\r\n            \"tenantId\": 2\r\n        },\r\n        \"gtin\": \"18456784353054\",\r\n        \"stock\": 35\r\n    },\r\n    {\r\n        \"name\": \"name of product6\",\r\n        \"description\": \"description of product6\",\r\n        \"salesPrice\": 61.78,\r\n        \"grossPrice\": 55.45,\r\n        \"code\": \"asdasdwq\",\r\n        \"shop\": {\r\n            \"tenantId\": 4\r\n        },\r\n        \"gtin\": \"1235678901007\",\r\n        \"stock\": 75\r\n    },\r\n    {\r\n        \"name\": \"name of product7\",\r\n        \"description\": \"description of product7\",\r\n        \"salesPrice\": 137.79,\r\n        \"grossPrice\": 117.09,\r\n        \"code\": \"lkşçjkl\",\r\n        \"shop\": {\r\n            \"tenantId\": 3\r\n        },\r\n        \"gtin\": \"7645678901562\",\r\n        \"stock\": 63\r\n    },\r\n    {\r\n        \"name\": \"name of product8\",\r\n        \"description\": \"description of product8\",\r\n        \"salesPrice\": 74.7,\r\n        \"grossPrice\": 67.3,\r\n        \"code\": \"gdfgdfwq\",\r\n        \"shop\": {\r\n            \"tenantId\": 4\r\n        },\r\n        \"gtin\": \"9655678901046\",\r\n        \"stock\": 45\r\n    },\r\n    {\r\n        \"name\": \"name of product9\",\r\n        \"description\": \"description of product9\",\r\n        \"salesPrice\": 68.07,\r\n        \"grossPrice\": 63.06,\r\n        \"code\": \"jgfhwe213\",\r\n        \"shop\": {\r\n            \"tenantId\": 2\r\n        },\r\n        \"gtin\": \"1845678901001\",\r\n        \"stock\": 7\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/product"
+					},
+					"response": []
+				},
+				{
+					"name": "update ProductById",
+					"id": "e94f539a-1284-40ef-98ba-d06b2729217f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"name of product1\",\r\n    \"description\": \"description of product1\",\r\n    \"salesPrice\": 54.0,\r\n    \"grossPrice\": 47.0,\r\n    \"code\": \"123asdwq\",\r\n    \"shop\": {\r\n        \"tenantId\": 1,\r\n        \"name\": \"first shop\",\r\n        \"email\": \"firstcustomer@mail.com\"\r\n    },\r\n    \"gtin\": \"5445678901061\",\r\n    \"stock\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/product/1"
+					},
+					"response": []
+				},
+				{
+					"name": "delete Product",
+					"id": "c7046308-9840-4179-b50e-a542613bcfe0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/product/1"
+					},
+					"response": []
+				}
+			],
+			"id": "5a98ee19-6bfb-402e-9e71-617889e42f0a"
+		},
+		{
 			"name": "Auth",
 			"item": [
 				{
