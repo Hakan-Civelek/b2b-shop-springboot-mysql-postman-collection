@@ -684,7 +684,7 @@
 								}
 							}
 						},
-						"url": "{{baseurl}}/product"
+						"url": "{{baseurl}}/address"
 					},
 					"response": []
 				},
