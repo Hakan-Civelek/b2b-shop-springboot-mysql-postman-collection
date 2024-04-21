@@ -9,7 +9,7 @@
 			"name": "Shop",
 			"item": [
 				{
-					"name": "get AllShops",
+					"name": "get AllShops For SystemOwner",
 					"id": "7716b8cc-07bd-4e89-9174-7875d814071e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -23,7 +23,7 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "{{baseurl}}/shop"
+						"url": "{{baseurl}}/shop/getAll"
 					},
 					"response": []
 				},
