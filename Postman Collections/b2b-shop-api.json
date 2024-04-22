@@ -752,7 +752,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "[\r\n    {\r\n        \"user\": {\r\n            \"id\": 3\r\n        },\r\n        \"product\": {\r\n            \"id\": 1\r\n        },\r\n        \"quantity\": 2\r\n    },\r\n    {\r\n        \"user\": {\r\n            \"id\": 3\r\n        },\r\n        \"product\": {\r\n            \"id\": 4\r\n        },\r\n        \"quantity\": 4\r\n    }\r\n]",
+							"raw": "[\r\n    {\r\n        \"user\": {\r\n            \"id\": 8\r\n        },\r\n        \"product\": {\r\n            \"id\": 2\r\n        },\r\n        \"quantity\": 2\r\n    },\r\n    {\r\n        \"user\": {\r\n            \"id\": 8\r\n        },\r\n        \"product\": {\r\n            \"id\": 5\r\n        },\r\n        \"quantity\": 4\r\n    }\r\n]",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -780,7 +780,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"name of product1\",\r\n    \"description\": \"description of product1\",\r\n    \"salesPrice\": 54.0,\r\n    \"grossPrice\": 47.0,\r\n    \"code\": \"123asdwq\",\r\n    \"shop\": {\r\n        \"tenantId\": 1,\r\n        \"name\": \"first shop\",\r\n        \"email\": \"firstcustomer@mail.com\"\r\n    },\r\n    \"gtin\": \"5445678901061\",\r\n    \"stock\": 8\r\n}",
+							"raw": "{\r\n    \"id\": 7,\r\n    \"user\": {\r\n        \"id\": 7        \r\n    },\r\n    \"product\": {\r\n        \"id\": 1        \r\n    },\r\n    \"quantity\": 13\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -826,7 +826,7 @@
 			"name": "Auth",
 			"item": [
 				{
-					"name": "api/login",
+					"name": "loginWithSystemOwner",
 					"event": [
 						{
 							"listen": "test",
@@ -854,6 +854,84 @@
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"username\": \"hakan\",\r\n    \"password\": \"pass\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/login"
+					},
+					"response": []
+				},
+				{
+					"name": "loginWithShopOwner",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "51e4b299-ca97-4496-949f-659a4c25283e",
+								"exec": [
+									"pm.test(\"Set Token!\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    console.log(jsonData.token)",
+									"    pm.collectionVariables.set(\"bearer_token\", jsonData.token);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "9f35c753-8832-47d4-9978-bb4a0c13b9e8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tenantId\": 1,\r\n    \"username\": \"hatice\",\r\n    \"password\": \"pass\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/login"
+					},
+					"response": []
+				},
+				{
+					"name": "loginWithCustomerUser",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "51e4b299-ca97-4496-949f-659a4c25283e",
+								"exec": [
+									"pm.test(\"Set Token!\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    console.log(jsonData.token)",
+									"    pm.collectionVariables.set(\"bearer_token\", jsonData.token);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "6abe9d42-227e-42c4-955e-c3b6117af832",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tenantId\": 1,\r\n    \"username\": \"hatice\",\r\n    \"password\": \"pass\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
