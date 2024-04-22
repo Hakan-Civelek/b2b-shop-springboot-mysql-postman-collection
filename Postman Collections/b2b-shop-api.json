@@ -703,7 +703,7 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "{{baseurl}}/basket/1"
+						"url": "{{baseurl}}/basket/7"
 					},
 					"response": []
 				},
@@ -787,7 +787,7 @@
 								}
 							}
 						},
-						"url": "{{baseurl}}/basket/1"
+						"url": "{{baseurl}}/basket/7"
 					},
 					"response": []
 				},
