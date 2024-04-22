@@ -823,7 +823,7 @@
 			"id": "4340ff71-fb83-4d11-bb1c-72036f326123"
 		},
 		{
-			"name": "Auth",
+			"name": "Login",
 			"item": [
 				{
 					"name": "loginWithSystemOwner",
@@ -892,7 +892,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"tenantId\": 1,\r\n    \"username\": \"hatice\",\r\n    \"password\": \"pass\"\r\n}",
+							"raw": "{\r\n    \"tenantId\": 3,\r\n    \"username\": \"ali\",\r\n    \"password\": \"pass\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
