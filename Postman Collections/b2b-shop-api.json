@@ -823,6 +823,171 @@
 			"id": "4340ff71-fb83-4d11-bb1c-72036f326123"
 		},
 		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "get AllBaskets",
+					"id": "21f4fb16-8ff6-4bee-9c9d-9421a4231464",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/order"
+					},
+					"response": []
+				},
+				{
+					"name": "get BasketById",
+					"id": "514c8dcb-515d-447a-963a-25f15d09b226",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseurl}}/order/1"
+					},
+					"response": []
+				},
+				{
+					"name": "create singleBasket",
+					"id": "37c52fd4-13b2-4949-9f0f-31d07a8de09f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": {\r\n        \"id\": 3\r\n    },\r\n    \"product\": {\r\n        \"id\": 1\r\n    },\r\n    \"quantity\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/product"
+					},
+					"response": []
+				},
+				{
+					"name": "create multipleBaskets",
+					"id": "32e93c07-5557-40b8-89c6-b9e03e7e18ed",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"user\": {\r\n            \"id\": 8\r\n        },\r\n        \"product\": {\r\n            \"id\": 2\r\n        },\r\n        \"quantity\": 2\r\n    },\r\n    {\r\n        \"user\": {\r\n            \"id\": 8\r\n        },\r\n        \"product\": {\r\n            \"id\": 5\r\n        },\r\n        \"quantity\": 4\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/basket"
+					},
+					"response": []
+				},
+				{
+					"name": "update BasketById",
+					"id": "d4d044df-3b50-48c4-9862-accc09cd61d8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 7,\r\n    \"user\": {\r\n        \"id\": 7        \r\n    },\r\n    \"product\": {\r\n        \"id\": 1        \r\n    },\r\n    \"quantity\": 13\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/basket/7"
+					},
+					"response": []
+				},
+				{
+					"name": "delete Basket",
+					"id": "703ef07c-66cc-4fda-a377-925ebda5e1ee",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/basket/1"
+					},
+					"response": []
+				}
+			],
+			"id": "913281f2-46d2-4cac-8b66-f29f4a5e2198"
+		},
+		{
 			"name": "Login",
 			"item": [
 				{
