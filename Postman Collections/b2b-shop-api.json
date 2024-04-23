@@ -826,7 +826,7 @@
 			"name": "Order",
 			"item": [
 				{
-					"name": "get AllBaskets",
+					"name": "get AllOrders",
 					"id": "21f4fb16-8ff6-4bee-9c9d-9421a4231464",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -854,7 +854,7 @@
 					"response": []
 				},
 				{
-					"name": "get BasketById",
+					"name": "get OrderById",
 					"id": "514c8dcb-515d-447a-963a-25f15d09b226",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -873,7 +873,7 @@
 					"response": []
 				},
 				{
-					"name": "create singleBasket",
+					"name": "create singleOrder",
 					"id": "37c52fd4-13b2-4949-9f0f-31d07a8de09f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -896,12 +896,12 @@
 								}
 							}
 						},
-						"url": "{{baseurl}}/product"
+						"url": "{{baseurl}}/order"
 					},
 					"response": []
 				},
 				{
-					"name": "create multipleBaskets",
+					"name": "create multipleOrders",
 					"id": "32e93c07-5557-40b8-89c6-b9e03e7e18ed",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -924,12 +924,12 @@
 								}
 							}
 						},
-						"url": "{{baseurl}}/basket"
+						"url": "{{baseurl}}/order"
 					},
 					"response": []
 				},
 				{
-					"name": "update BasketById",
+					"name": "update OrderById",
 					"id": "d4d044df-3b50-48c4-9862-accc09cd61d8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -952,7 +952,7 @@
 								}
 							}
 						},
-						"url": "{{baseurl}}/basket/7"
+						"url": "{{baseurl}}/order/7"
 					},
 					"response": []
 				},
@@ -980,7 +980,7 @@
 								}
 							}
 						},
-						"url": "{{baseurl}}/basket/1"
+						"url": "{{baseurl}}/order/1"
 					},
 					"response": []
 				}
