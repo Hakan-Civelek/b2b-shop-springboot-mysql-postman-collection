@@ -752,7 +752,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "[\r\n    {\r\n        \"user\": {\r\n            \"id\": 8\r\n        },\r\n        \"product\": {\r\n            \"id\": 2\r\n        },\r\n        \"quantity\": 2\r\n    },\r\n    {\r\n        \"user\": {\r\n            \"id\": 8\r\n        },\r\n        \"product\": {\r\n            \"id\": 5\r\n        },\r\n        \"quantity\": 4\r\n    }\r\n]",
+							"raw": "[\r\n    {\r\n        \"user\": {\r\n            \"id\": 8\r\n        },\r\n        \"product\": {\r\n            \"id\": 2\r\n        },\r\n        \"quantity\": 1\r\n    },\r\n    {\r\n        \"user\": {\r\n            \"id\": 8\r\n        },\r\n        \"product\": {\r\n            \"id\": 5\r\n        },\r\n        \"quantity\": 4\r\n    }\r\n]",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -889,7 +889,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"user\": {\r\n        \"id\": 3\r\n    },\r\n    \"product\": {\r\n        \"id\": 1\r\n    },\r\n    \"quantity\": 2\r\n}",
+							"raw": "{\r\n    \"orderNote\": \"order note2\",\r\n    \"baskets\": [\r\n        {\r\n        \"product\": {\r\n            \"quantity\": 5,\r\n            \"salesPrice\": 54.0,\r\n            \"name\": \"name of product1\",\r\n            \"grossPrice\": 47.0,\r\n            \"id\": 1\r\n        },\r\n        \"totalGrossPrice\": 235.0,\r\n        \"id\": 1,\r\n        \"totalSalesPrice\": 270.0\r\n    },\r\n    {\r\n        \"product\": {\r\n            \"quantity\": 2,\r\n            \"salesPrice\": 123.56,\r\n            \"name\": \"name of product4\",\r\n            \"grossPrice\": 97.79,\r\n            \"id\": 4\r\n        },\r\n        \"totalGrossPrice\": 195.58,\r\n        \"id\": 2,\r\n        \"totalSalesPrice\": 247.12\r\n    }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
