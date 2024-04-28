@@ -724,7 +724,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"user\": {\r\n        \"id\": 1\r\n    },\r\n    \"salesItems\": [\r\n        {\r\n            \"product\": {\r\n                \"id\": 1\r\n            },\r\n            \"quantiity\": 7\r\n        },\r\n        {\r\n            \"product\": {\r\n                \"id\": 4\r\n            },\r\n            \"quantiity\": 3\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"user\": {\r\n        \"id\": 7\r\n    },\r\n    \"basketItems\": [\r\n        {\r\n            \"product\": {\r\n                \"id\": 1\r\n            },\r\n            \"quantity\": 7\r\n        },\r\n        {\r\n            \"product\": {\r\n                \"id\": 4\r\n            },\r\n            \"quantity\": 3\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
