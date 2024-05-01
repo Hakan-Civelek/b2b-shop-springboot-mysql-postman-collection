@@ -991,7 +991,7 @@
 			"name": "Address",
 			"item": [
 				{
-					"name": "get AllAddressies",
+					"name": "get AllAddresses",
 					"id": "3416c318-eb2f-4d6d-b94b-118785bb8d20",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1038,7 +1038,7 @@
 					"response": []
 				},
 				{
-					"name": "create singleOrder",
+					"name": "create singleAddress",
 					"id": "bc3380d6-8e0d-4723-8b54-34cdfb6e215d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1066,7 +1066,7 @@
 					"response": []
 				},
 				{
-					"name": "create multipleOrders",
+					"name": "create multipleAddresses",
 					"id": "28ea2aac-3517-493e-8bac-ef01a6b39b21",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
