@@ -988,6 +988,171 @@
 			"id": "913281f2-46d2-4cac-8b66-f29f4a5e2198"
 		},
 		{
+			"name": "Address",
+			"item": [
+				{
+					"name": "get AllAddresses",
+					"id": "3416c318-eb2f-4d6d-b94b-118785bb8d20",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/address"
+					},
+					"response": []
+				},
+				{
+					"name": "get AddressById",
+					"id": "055d7226-b5e3-412d-9141-f32797ad2924",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseurl}}/address/1"
+					},
+					"response": []
+				},
+				{
+					"name": "create singleAddress",
+					"id": "bc3380d6-8e0d-4723-8b54-34cdfb6e215d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"countryId\": 216,\r\n    \"title\": \"Bizim ev\",\r\n    \"city\": \"İstanbul\",\r\n    \"addressLine\": \"Fatih Mahallesi İnönü Caddesi No:45 Daire: 3, Beyoğlu, İstanbul\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/address"
+					},
+					"response": []
+				},
+				{
+					"name": "create multipleAddresses",
+					"id": "28ea2aac-3517-493e-8bac-ef01a6b39b21",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"user\": {\r\n            \"id\": 8\r\n        },\r\n        \"product\": {\r\n            \"id\": 2\r\n        },\r\n        \"quantity\": 2\r\n    },\r\n    {\r\n        \"user\": {\r\n            \"id\": 8\r\n        },\r\n        \"product\": {\r\n            \"id\": 5\r\n        },\r\n        \"quantity\": 4\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/order"
+					},
+					"response": []
+				},
+				{
+					"name": "update OrderById",
+					"id": "dce5a45b-3460-4e3f-b275-214cd98ab231",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 7,\r\n    \"user\": {\r\n        \"id\": 7        \r\n    },\r\n    \"product\": {\r\n        \"id\": 1        \r\n    },\r\n    \"quantity\": 13\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/address/1"
+					},
+					"response": []
+				},
+				{
+					"name": "delete Basket",
+					"id": "6110bf77-c551-42ab-8fc0-771e6994f6a3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/address/1"
+					},
+					"response": []
+				}
+			],
+			"id": "6c3a0bb2-762c-4783-8cf7-659bdc680b56"
+		},
+		{
 			"name": "Login",
 			"item": [
 				{
@@ -1109,6 +1274,40 @@
 				}
 			],
 			"id": "db75c280-f613-4ca7-8b67-8b17787232dd"
+		},
+		{
+			"name": "Country",
+			"item": [
+				{
+					"name": "get AllCountries",
+					"id": "2dbfaa31-dd86-49f8-98be-0f35cdd2ae56",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/country"
+					},
+					"response": []
+				}
+			],
+			"id": "c1c8e9bf-2703-499a-bcd3-839a7988e8ba"
 		},
 		{
 			"name": "create systemOwners!!",
