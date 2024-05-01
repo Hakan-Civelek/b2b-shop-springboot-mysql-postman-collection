@@ -318,6 +318,162 @@
 			"id": "b7df9e4c-943e-4fe2-b7c6-a013b0333f91"
 		},
 		{
+			"name": "User",
+			"item": [
+				{
+					"name": "get AllUsers",
+					"id": "6e97f0f2-a595-4012-9c81-1d7d7cb64452",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseurl}}/user"
+					},
+					"response": []
+				},
+				{
+					"name": "get UserById",
+					"id": "5606cb7a-8ddc-4e33-b2b5-4979d515fb48",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseurl}}/user/1"
+					},
+					"response": []
+				},
+				{
+					"name": "create singleUser",
+					"id": "1fc99bed-976b-4786-bb53-54c042d494c0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Hakan\",\r\n    \"username\": \"hakan\",\r\n    \"password\": \"pass\",\r\n    \"email\": \"hakan@email.com\",\r\n    \"authorities\": [\"ROLE_ADMIN\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/user"
+					},
+					"response": []
+				},
+				{
+					"name": "create multipleUsers",
+					"id": "99049480-9f7c-4480-b828-357bdd12303f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"name\": \"Ali\",\r\n        \"username\": \"ali\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"ali@email.com\",\r\n        \"phoneNumber\": \"05369874501\",\r\n        \"authorities\": [\r\n            \"ROLE_SHOP_OWNER\"\r\n        ],\r\n        \"shop\": {\r\n            \"tenantId\": 1\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Aysu\",\r\n        \"username\": \"aysu\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"aysu@email.com\",\r\n        \"phoneNumber\": \"05369874502\",\r\n        \"authorities\": [\r\n            \"ROLE_SHOP_OWNER\"\r\n        ],\r\n        \"shop\": {\r\n            \"tenantId\": 2\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Ayşe\",\r\n        \"username\": \"ayse\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"ayse@email.com\",\r\n        \"phoneNumber\": \"05369874503\",\r\n        \"authorities\": [\r\n            \"ROLE_SHOP_OWNER\"\r\n        ],\r\n        \"shop\": {\r\n            \"tenantId\": 3\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Fatma\",\r\n        \"username\": \"fatma\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"fatma@email.com\",\r\n        \"phoneNumber\": \"05369874504\",\r\n        \"authorities\": [\r\n            \"ROLE_SHOP_OWNER\"\r\n        ],\r\n        \"shop\": {\r\n            \"tenantId\": 4\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Hatice\",\r\n        \"username\": \"hatice\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"hatice@email.com\",\r\n        \"phoneNumber\": \"05369874505\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 1\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Ahmet\",\r\n        \"username\": \"ahmet\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"ahmet@email.com\",\r\n        \"phoneNumber\": \"05369874506\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 2\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Merve\",\r\n        \"username\": \"merve\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"merve@email.com\",\r\n        \"phoneNumber\": \"05369874507\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 3\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Seda\",\r\n        \"username\": \"seda\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"seda@email.com\",\r\n        \"phoneNumber\": \"05369874508\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 1\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Basak\",\r\n        \"username\": \"basak\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"basak@email.com\",\r\n        \"phoneNumber\": \"05369874509\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 2\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Pelin\",\r\n        \"username\": \"pelin\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"pelin@email.com\",\r\n        \"phoneNumber\": \"05369874510\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 3\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Arda\",\r\n        \"username\": \"arda\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"arda@email.com\",\r\n        \"phoneNumber\": \"05369874511\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 4\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Akın\",\r\n        \"username\": \"akın\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"akın@email.com\",\r\n        \"phoneNumber\": \"05369874512\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 1\r\n        }\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/user"
+					},
+					"response": []
+				},
+				{
+					"name": "update UserById",
+					"id": "040a818a-ef19-4cbd-853b-1a1b4b1fa531",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Esat\",\r\n    \"username\": \"esat\",\r\n    \"password\": \"pass\",\r\n    \"email\": \"test@email.com\",\r\n    \"accountNonExpired\": true,\r\n    \"accountNonLocked\": true,\r\n    \"credentialsNonExpired\": true,\r\n    \"authorities\": [\r\n        \"ROLE_ADMIN\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/user/1"
+					},
+					"response": []
+				},
+				{
+					"name": "delete User",
+					"id": "d6f3e900-6cd8-4578-bf82-9b214b899ce5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/user/1"
+					},
+					"response": []
+				}
+			],
+			"id": "fa6096f6-75e0-4540-89a6-aea010a0ddd7"
+		},
+		{
 			"name": "Product",
 			"item": [
 				{
@@ -481,162 +637,6 @@
 				}
 			],
 			"id": "08c284f3-c473-49be-aea4-ebf08596c682"
-		},
-		{
-			"name": "User",
-			"item": [
-				{
-					"name": "get AllUsers",
-					"id": "6e97f0f2-a595-4012-9c81-1d7d7cb64452",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{bearer_token}}"
-							}
-						},
-						"method": "GET",
-						"header": [],
-						"url": "{{baseurl}}/user"
-					},
-					"response": []
-				},
-				{
-					"name": "get UserById",
-					"id": "5606cb7a-8ddc-4e33-b2b5-4979d515fb48",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{bearer_token}}"
-							}
-						},
-						"method": "GET",
-						"header": [],
-						"url": "{{baseurl}}/user/1"
-					},
-					"response": []
-				},
-				{
-					"name": "create singleUser",
-					"id": "1fc99bed-976b-4786-bb53-54c042d494c0",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{bearer_token}}"
-							}
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Hakan\",\r\n    \"username\": \"hakan\",\r\n    \"password\": \"pass\",\r\n    \"email\": \"hakan@email.com\",\r\n    \"authorities\": [\"ROLE_ADMIN\"]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{baseurl}}/user"
-					},
-					"response": []
-				},
-				{
-					"name": "create multipleUsers",
-					"id": "99049480-9f7c-4480-b828-357bdd12303f",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{bearer_token}}"
-							}
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "[\r\n    {\r\n        \"name\": \"Ali\",\r\n        \"username\": \"ali\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"ali@email.com\",\r\n        \"phoneNumber\": \"05369874501\",\r\n        \"authorities\": [\r\n            \"ROLE_SHOP_OWNER\"\r\n        ],\r\n        \"shop\": {\r\n            \"tenantId\": 1\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Aysu\",\r\n        \"username\": \"aysu\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"aysu@email.com\",\r\n        \"phoneNumber\": \"05369874502\",\r\n        \"authorities\": [\r\n            \"ROLE_SHOP_OWNER\"\r\n        ],\r\n        \"shop\": {\r\n            \"tenantId\": 2\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Ayşe\",\r\n        \"username\": \"ayse\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"ayse@email.com\",\r\n        \"phoneNumber\": \"05369874503\",\r\n        \"authorities\": [\r\n            \"ROLE_SHOP_OWNER\"\r\n        ],\r\n        \"shop\": {\r\n            \"tenantId\": 3\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Fatma\",\r\n        \"username\": \"fatma\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"fatma@email.com\",\r\n        \"phoneNumber\": \"05369874504\",\r\n        \"authorities\": [\r\n            \"ROLE_SHOP_OWNER\"\r\n        ],\r\n        \"shop\": {\r\n            \"tenantId\": 4\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Hatice\",\r\n        \"username\": \"hatice\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"hatice@email.com\",\r\n        \"phoneNumber\": \"05369874505\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 1\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Ahmet\",\r\n        \"username\": \"ahmet\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"ahmet@email.com\",\r\n        \"phoneNumber\": \"05369874506\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 2\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Merve\",\r\n        \"username\": \"merve\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"merve@email.com\",\r\n        \"phoneNumber\": \"05369874507\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 3\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Seda\",\r\n        \"username\": \"seda\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"seda@email.com\",\r\n        \"phoneNumber\": \"05369874508\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 1\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Basak\",\r\n        \"username\": \"basak\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"basak@email.com\",\r\n        \"phoneNumber\": \"05369874509\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 2\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Pelin\",\r\n        \"username\": \"pelin\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"pelin@email.com\",\r\n        \"phoneNumber\": \"05369874510\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 3\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Arda\",\r\n        \"username\": \"arda\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"arda@email.com\",\r\n        \"phoneNumber\": \"05369874511\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 4\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Akın\",\r\n        \"username\": \"akın\",\r\n        \"password\": \"pass\",\r\n        \"email\": \"akın@email.com\",\r\n        \"phoneNumber\": \"05369874512\",\r\n        \"authorities\": [\r\n            \"ROLE_CUSTOMER_USER\"\r\n        ],\r\n        \"customer\": {\r\n            \"tenantId\": 1\r\n        }\r\n    }\r\n]",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{baseurl}}/user"
-					},
-					"response": []
-				},
-				{
-					"name": "update UserById",
-					"id": "040a818a-ef19-4cbd-853b-1a1b4b1fa531",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{bearer_token}}"
-							}
-						},
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Esat\",\r\n    \"username\": \"esat\",\r\n    \"password\": \"pass\",\r\n    \"email\": \"test@email.com\",\r\n    \"accountNonExpired\": true,\r\n    \"accountNonLocked\": true,\r\n    \"credentialsNonExpired\": true,\r\n    \"authorities\": [\r\n        \"ROLE_ADMIN\"\r\n    ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{baseurl}}/user/1"
-					},
-					"response": []
-				},
-				{
-					"name": "delete User",
-					"id": "d6f3e900-6cd8-4578-bf82-9b214b899ce5",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{bearer_token}}"
-							}
-						},
-						"method": "DELETE",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{baseurl}}/user/1"
-					},
-					"response": []
-				}
-			],
-			"id": "fa6096f6-75e0-4540-89a6-aea010a0ddd7"
 		},
 		{
 			"name": "Basket",
