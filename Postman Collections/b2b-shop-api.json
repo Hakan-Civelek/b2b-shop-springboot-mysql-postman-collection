@@ -9,25 +9,6 @@
 			"name": "Shop",
 			"item": [
 				{
-					"name": "get AllShops For SystemOwner",
-					"id": "7716b8cc-07bd-4e89-9174-7875d814071e",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{bearer_token}}"
-							}
-						},
-						"method": "GET",
-						"header": [],
-						"url": "{{baseurl}}/shop/getAll"
-					},
-					"response": []
-				},
-				{
 					"name": "get Shop",
 					"id": "4dd7d4a5-d0e3-4496-bc98-00f045abd948",
 					"protocolProfileBehavior": {
