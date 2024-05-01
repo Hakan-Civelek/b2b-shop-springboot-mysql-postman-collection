@@ -1112,7 +1112,36 @@
 		},
 		{
 			"name": "Country",
-			"item": [],
+			"item": [
+				{
+					"name": "get AllCountries",
+					"id": "2dbfaa31-dd86-49f8-98be-0f35cdd2ae56",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{bearer_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/country"
+					},
+					"response": []
+				}
+			],
 			"id": "c1c8e9bf-2703-499a-bcd3-839a7988e8ba"
 		},
 		{
