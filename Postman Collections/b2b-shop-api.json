@@ -1054,7 +1054,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"countryId\": 216,\r\n    \"title\": \"Bizim ev\",\r\n    \"city\": \"İstanbul\",\r\n    \"addressLine\": \"Barbaros bulvarı No:7 Daire: 3 Beşiktaş/İstabul\"\r\n}",
+							"raw": "{\r\n    \"countryId\": 216,\r\n    \"title\": \"Bizim ev\",\r\n    \"city\": \"İstanbul\",\r\n    \"addressLine\": \"Fatih Mahallesi İnönü Caddesi No:45 Daire: 3, Beyoğlu, İstanbul\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
