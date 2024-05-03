@@ -275,7 +275,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"tenantId\": 1,\r\n    \"name\": \"test for update customer\",\r\n    \"email\": \"firstcustomer@mail.com\",\r\n    \"shop\": {\r\n        \"tenantId\": 1\r\n    },\r\n    \"vatNumber\": \"first vatNumber\",\r\n    \"phoneNumber\": \"05678478961\",\r\n    \"active\": true\r\n}",
+							"raw": "{\r\n    \"tenantId\": 1,\r\n    \"name\": \"test for update customer\",\r\n    \"email\": \"firstcustomer@mail.com\",\r\n    \"shop\": {\r\n        \"tenantId\": 2\r\n    },\r\n    \"vatNumber\": \"first vatNumber\",\r\n    \"phoneNumber\": \"05678478961\",\r\n    \"active\": true\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -431,7 +431,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Esat\",\r\n    \"username\": \"esat\",\r\n    \"password\": \"pass\",\r\n    \"email\": \"test@email.com\",\r\n    \"accountNonExpired\": true,\r\n    \"accountNonLocked\": true,\r\n    \"credentialsNonExpired\": true,\r\n    \"authorities\": [\r\n        \"ROLE_ADMIN\"\r\n    ]\r\n}",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Hakan update test\",\r\n    \"username\": \"hakan\",\r\n    \"password\": \"pass\",\r\n    \"email\": \"hakan@email.com\",\r\n    \"phoneNumber\": null,\r\n    \"authorities\": [\r\n        \"ROLE_SYSTEM_OWNER\"\r\n    ],\r\n    \"shop\": null,\r\n    \"customer\": null,\r\n    \"accountNonLocked\": true,\r\n    \"accountNonExpired\": true,\r\n    \"credentialsNonExpired\": true,\r\n    \"enabled\": true,\r\n    \"active\": true\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -596,7 +596,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"name of product1\",\r\n    \"description\": \"description of product1\",\r\n    \"salesPrice\": 54.0,\r\n    \"grossPrice\": 47.0,\r\n    \"code\": \"123asdwq\",\r\n    \"shop\": {\r\n        \"tenantId\": 1,\r\n        \"name\": \"first shop\",\r\n        \"email\": \"firstcustomer@mail.com\"\r\n    },\r\n    \"gtin\": \"5445678901061\",\r\n    \"stock\": 8\r\n}",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"test for update name of product1\",\r\n    \"description\": \"test for update description of product1\",\r\n    \"salesPrice\": 47.0,\r\n    \"grossPrice\": 54.0,\r\n    \"vatRate\": 7.0,\r\n    \"code\": \"123asdwq\",\r\n    \"shop\": {\r\n        \"tenantId\": 1\r\n    },\r\n    \"gtin\": \"test for update 5445678901061\",\r\n    \"stock\": 7,\r\n    \"active\": true\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
