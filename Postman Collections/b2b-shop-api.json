@@ -275,7 +275,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"K&C\",\r\n    \"email\": \"kandc@mail.com\",\r\n    \"users\": [\r\n        {\r\n            \"id\": 1\r\n        },\r\n        {\r\n            \"id\": 4\r\n        },\r\n        {\r\n            \"id\": 3\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"tenantId\": 1,\r\n    \"name\": \"test for update customer\",\r\n    \"email\": \"firstcustomer@mail.com\",\r\n    \"shop\": {\r\n        \"tenantId\": 1\r\n    },\r\n    \"vatNumber\": \"first vatNumber\",\r\n    \"phoneNumber\": \"05678478961\",\r\n    \"active\": true\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
