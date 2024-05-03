@@ -119,7 +119,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"first shop\",\r\n    \"email\": \"firstshop@mail.com\"\r\n}",
+							"raw": "{\r\n    \"name\": \"first shop\",\r\n    \"email\": \"firstshop@mail.com\",\r\n    \"phoneNumber\": \"05678478961\",\r\n    \"vatNumber\": \"1 vatNumber\",\r\n    \"aboutUs\": \"1 aboutUs\",\r\n    \"privacyPolicy\": \"1 privacyPolicy\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
